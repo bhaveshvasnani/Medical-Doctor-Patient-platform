@@ -1,0 +1,70 @@
+     
+database => patient table
+create table patient (
+     id int(3) not null,
+     name char(20) not null, 
+     dob date not null,
+     state char(20) not null,
+     city char(15) not null,
+     address char(20) not null,
+     phoneno char(10) not null,
+     sex char(6) not null,
+     mailid char(30) not null,
+     password char(10) not null
+     );
+database => doctor table
+create table doctor (
+     id int(3) not null,
+     name char(20) not null, 
+     dob date not null,
+     state char(20) not null,
+     city char(15) not null,
+     address char(20) not null,
+     phoneno char(10) not null,
+     degree  char(30) not null,
+     sex char(6) not null,
+     mailid char(30) not null,
+     password char(10) not null
+     );
+
+
+insert into patient values(
+
+	1,'hanuman','1990-4-3','raj','jaipur','niwaru','9820133412','male','han123@gmail.com','1234h'
+
+);
+
+
+
+insert into doctor values(
+
+	1,'hanuman','1990-4-3','raj','jaipur','niwaru','9820133412','mbbs','male','han123@gmail.com','1234h'
+
+);
+
+create table patient_pro(
+
+	id int(3),
+	mail char(30),
+	problem char(100)
+);
+create table patient_sol(
+
+	id int(3),
+	mail char(30),
+	problem char(100),
+	solution char(100)
+);
+
+insert into patient_pro values(
+
+	1,'hanu123@gmail.com','hedek'
+
+);
+insert into patient_sol values(
+
+	1,'hanu123@gmail.com','hedek','headache table'
+
+);
+
+
